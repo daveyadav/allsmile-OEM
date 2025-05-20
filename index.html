@@ -314,27 +314,27 @@ and Elevate Your Presence in the Global Oral Care Industry."</p>
     }
   </script>
   <script>
-    window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('#navbar a');
+  const contactSection = document.querySelector('#contact');
+  const navLinks = document.querySelectorAll('.nav-link');
 
-  let currentSection = '';
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80;
-    if (pageYOffset >= sectionTop) {
-      currentSection = section.getAttribute('id');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => link.classList.add('text-blue-600'));
+        } else {
+          navLinks.forEach(link => link.classList.remove('text-blue-600'));
+        }
+      });
+    },
+    {
+      threshold: 0.5, // trigger when 50% of the contact section is visible
     }
-  });
+  );
 
-  navLinks.forEach(link => {
-    link.classList.remove('text-blue-600');
-    if (link.getAttribute('href') === `#${currentSection}`) {
-      link.classList.add('text-blue-600');
-    }
-  });
-});
-  </script>
+  observer.observe(contactSection);
+</script>
+
 <script>
   
   const form = document.getElementById("contactForm");
