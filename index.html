@@ -44,9 +44,10 @@
 
 <body class="bg-white text-grey-800">
   <!-- Navigation Bar -->
-  <header class="bg-white shadow fixed w-full z-50">
+ <header class="bg-white shadow fixed w-full z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-4">
+      
       <!-- Logo -->
       <div class="flex items-center">
         <span class="font-bold text-xl text-blue-600">
@@ -55,7 +56,7 @@
       </div>
 
       <!-- Desktop Nav -->
-      <nav class="space-x-6 text-gray-700 font-semibold hidden md:flex">
+      <nav class="flex items-center space-x-6 text-gray-700 font-semibold hidden md:flex">
         <a href="index.html" class="hover:text-blue-600 text-blue-600">Home</a>
         <a href="abouttoem.html" class="hover:text-blue-600">About Us</a>
         <a href="#contact" class="hover:text-blue-600">Contact Us</a>
@@ -63,21 +64,23 @@
       </nav>
 
       <!-- Mobile Menu Bars -->
-<div id="mobile-menu-button" class="space-y-1 cursor-pointer md:hidden">
-  <span class="block w-6 h-0.5 bg-black"></span>
-  <span class="block w-6 h-0.5 bg-black"></span>
-  <span class="block w-6 h-0.5 bg-black"></span>
-</div>
+      <div id="mobile-menu-button" class="space-y-1 cursor-pointer md:hidden">
+        <span class="block w-6 h-0.5 bg-black"></span>
+        <span class="block w-6 h-0.5 bg-black"></span>
+        <span class="block w-6 h-0.5 bg-black"></span>
+      </div>
+    </div>
 
-
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 text-gray-700 font-semibold bg-white border-t">
-    <a href="index.html" class="block hover:text-blue-600">Home</a>
-    <a href="abouttoem.html" class="block hover:text-blue-600">About Us</a>
-    <a href="#contact" class="block hover:text-blue-600">Contact Us</a>
-    <a href="#contact" class="block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Request Quote</a>
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 text-gray-700 font-semibold bg-white border-t">
+      <a href="index.html" class="block hover:text-blue-600">Home</a>
+      <a href="abouttoem.html" class="block hover:text-blue-600">About Us</a>
+      <a href="#contact" class="block hover:text-blue-600">Contact Us</a>
+      <a href="#contact" class="block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Request Quote</a>
+    </div>
   </div>
 </header>
+
 
   <!-- Hero Section -->
   <section class="hero-bg py-32 px-4 text-center text-white relative min-h-screen flex items-center justify-center fade-in">
