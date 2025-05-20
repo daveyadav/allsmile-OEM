@@ -314,6 +314,26 @@ and Elevate Your Presence in the Global Oral Care Industry."</p>
     }
   </script>
 <script>
+  window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('#navbar a');
+
+  let currentSection = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    if (pageYOffset >= sectionTop) {
+      currentSection = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('text-blue-600');
+    if (link.getAttribute('href') === `#${currentSection}`) {
+      link.classList.add('text-blue-600');
+    }
+  });
+});
   const form = document.getElementById("contactForm");
   const loading = document.getElementById("loadingMessage");
   const success = document.getElementById("successMessage");
