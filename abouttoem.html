@@ -33,23 +33,42 @@
 <body class="bg-white text-gray-800">
 
   <!-- Navigation Bar -->
-  <header class="bg-white shadow fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4">
-        <div class="flex items-center">
-          
-          <span class="font-bold text-xl text-blue-600"><a href="index.html">Allsmile</a></span>
-        </div>
-        <nav class="space-x-6 text-gray-700 font-semibold hidden md:flex">
-          <a href="index.html" class="hover:text-blue-600">Home</a>
-          <a href="abouttoem.html" class="hover:text-blue-600 text-blue-600">About Us</a>
-          <a href="index.html#contact" class="hover:text-blue-600">Contact Us</a>
-          <a href="index.html#contact"
-            class="ml-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Request Quote</a>
-        </nav>
+   <header class="bg-white shadow fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <span class="font-bold text-xl text-blue-600">
+          <a href="index.html">Allsmile</a>
+        </span>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="flex items-center space-x-6 text-gray-700 font-semibold hidden md:flex">
+        <a href="index.html" class="hover:text-blue-600 text-blue-600">Home</a>
+        <a href="abouttoem.html" class="hover:text-blue-600">About Us</a>
+        <a href="#contact" class="hover:text-blue-600">Contact Us</a>
+        <a href="#contact" class="ml-4 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Request Quote</a>
+      </nav>
+
+      <!-- Mobile Menu Bars -->
+      <div id="mobile-menu-button" class="space-y-1 cursor-pointer md:hidden">
+        <span class="block w-6 h-0.5 bg-black"></span>
+        <span class="block w-6 h-0.5 bg-black"></span>
+        <span class="block w-6 h-0.5 bg-black"></span>
       </div>
     </div>
-  </header>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 text-gray-700 font-semibold bg-white border-t">
+      <a href="index.html" class="block hover:text-blue-600">Home</a>
+      <a href="abouttoem.html" class="block hover:text-blue-600">About Us</a>
+      <a href="#contact" class="block hover:text-blue-600">Contact Us</a>
+      <a href="#contact" class="block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Request Quote</a>
+    </div>
+  </div>
+</header>
 
   <!-- About Us Hero -->
   <section class="pt-40 pb-20 px-4 fade-in max-w-5xl mx-auto text-center">
